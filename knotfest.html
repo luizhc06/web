@@ -6,10 +6,15 @@ deixei anotado aqui pra reciclar futuramente...
 - <ul>: cria uma lista nao ordenada (sem numeros).
 - <li>: representa um item dentro de uma lista.
 - style dentro do <li>: permite mudar a aparencia do item, como cor, tamanho, espacamento etc. 
-  exemplo de uso: <li style="color: red;">texto vermelho</li>
+   exemplo de uso: <li style="color: red;">texto vermelho</li>
 - <footer>: define o rodape da pagina, onde ficam informacoes adicionais.
 - <a>: cria um link para outra pagina ou site.
 - <br>: adiciona uma quebra de linha, usado para separar textos sem precisar de um novo <p>.
+- <input>: campo para o usuario digitar ou selecionar algo.
+- type="text": campo para digitar texto (nome, email, telefone).
+- type="radio": botoes para escolher uma opcao (pista, vip, camarote).
+- type="checkbox": opcao de marcar ou desmarcar (receber atualizacoes).
+- type="submit": botao para enviar o formulario.
 
 - w3schools (https://www.w3schools.com/html/) -->
 
@@ -58,6 +63,31 @@ deixei anotado aqui pra reciclar futuramente...
       <p><strong>Vendas a partir de 01/09</strong></p>
       <p>PISTA PREMIUM • PISTA COMUM • CAMAROTES VIP</p>
       <p><a href="#" style="color: #ff4444; text-decoration: none; font-weight: bold;">GARANTA SEU LUGAR NO INFERNO</a></p>
+    </section>
+
+    <section>
+      <h3>📝 Inscreva-se</h3>
+      <form>
+        <p>Nome:</p>
+        <input type="text" name="nome" required>
+    
+        <p>E-mail:</p>
+        <input type="text" name="email" required>
+    
+        <p>Telefone:</p>
+        <input type="text" name="telefone" required>
+    
+        <p>Escolha seu ingresso:</p>
+        <input type="radio" name="ingresso" value="pista"> Pista<br>
+        <input type="radio" name="ingresso" value="vip"> VIP<br>
+        <input type="radio" name="ingresso" value="camarote"> Camarote<br>
+    
+        <p>
+          <input type="checkbox" name="notificacoes"> Receber atualizacoes por e-mail
+        </p>
+    
+        <p><input type="submit" value="Enviar Inscricao"></p>
+      </form>
     </section>
 
     <footer style="text-align: center; padding: 20px; background: rgba(0,0,0,0.9); margin-top: 40px; border-radius: 10px;">
